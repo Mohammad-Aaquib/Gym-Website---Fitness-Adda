@@ -1,0 +1,2372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Adda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gymproject.css">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            background-image: url('gym3bg.jpg');
+            width: 1500px;
+            height: 850px;
+            background-position: cover;
+            background-repeat: no-repeat;
+        }
+
+        ul {
+            list-style: none;
+            color: whitesmoke;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center
+        }
+
+        .link ul li {
+
+            margin: 0.8em 25px;
+            padding: 2px 10px;
+            font-size: 1.2em;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .link ul li a {
+            text-decoration: none;
+            color: White;
+        }
+
+        .link ul li a:hover {
+            color: rgb(172, 228, 58);
+            opacity: .6;
+            text-decoration-line: underline;
+            cursor: pointer;
+        }
+
+        .logo img {
+            width: 12em;
+            height: 10em;
+            margin: 0px 10px;
+        }
+
+        #text {
+            color: white;
+            margin-left: 18%;
+            font-size: 4em;
+        }
+
+        /* #paragraph {
+            color: white;
+            font-size: 1.5em;
+            font-weight: lighter;
+            margin-left: 18.5%;
+            margin-top: 0.2em;
+        } */
+
+        #a1 {
+            color: rgb(172, 228, 58);
+        }
+
+        #a2 {
+            color: orangered;
+        }
+
+        #text2 {
+            color: white;
+            margin: 1em 18%;
+            font-size: 1.5em;
+            font-weight: lighter;
+            letter-spacing: 3px;
+
+        }
+
+        #text3 {
+            color: white;
+            margin: 0em 18%;
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .btn {
+
+            width: 10em;
+            height: 3em;
+            letter-spacing: 2px;
+            padding: 5px 2px;
+            margin: 1em 18%;
+            background-color: orangered;
+            color: white;
+            font-weight: bolder;
+            /* border: 2px solid black; */
+        }
+
+        .btn:hover {
+            color: black;
+            cursor: pointer;
+            width: 10.2em;
+            height: 3.25em;
+
+        }
+
+        .container1 {
+            /* font-family: sans-serif; */
+            height: 680px;
+            width: 1500px;
+            background-color: rgb(35, 34, 34);
+            color: white;
+            margin-top: 0px;
+
+
+        }
+
+        #top_heading {
+            color: orangered;
+            padding-top: 3em;
+            text-align: center;
+            margin-bottom: .5em;
+            font-size: 1.1em;
+            font-weight: lighter;
+            letter-spacing: 1px;
+        }
+
+        #heading2 {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box {
+            /* border: 2px solid rgb(35, 34, 34); */
+            width: 300px;
+            height: 300px;
+            margin: 50px 25px;
+            padding: 0px 10px;
+        }
+
+        .images {
+            width: 125px;
+            height: 110px;
+            margin: 10px 4.7em;
+        }
+
+        .images:hover {
+            cursor: pointer;
+        }
+
+        .heading_img {
+            font-size: 1.75em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 2px;
+            margin: 5px auto;
+        }
+
+        .heading_img:hover {
+            color: orangered;
+            cursor: pointer;
+        }
+
+        .paragraph_img {
+            text-align: center;
+            font-weight: lighter;
+            opacity: 0.7;
+        }
+
+        .container2 {
+            font-family: 'Ubuntu', sans-serif;
+
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            /* width: 100vh; */
+            /* flex-wrap: wrap; */
+
+            /* background-color: rgb(24, 24, 24); */
+
+        }
+
+        .container2_1 {
+            width: 1500px;
+            /* width: 1500px; */
+            /* border: 1px solid black;
+            box-sizing: border-box; */
+
+            background-color: rgb(24, 24, 24);
+
+            /*display: flex;
+            flex-wrap: wrap */
+        }
+
+        #middle_heading {
+
+            height: 20px;
+            width: 200px;
+            text-align: center;
+            margin: 15px auto;
+            margin-bottom: 0px;
+            font-size: 1.1em;
+            font-weight: lighter;
+            color: orangered;
+        }
+
+        #middle_heading2 {
+
+            text-align: center;
+            margin: 10px auto;
+
+
+        }
+
+        #services {
+            /* display: flex;
+            flex-wrap: wrap; */
+
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #services #short_images {
+
+            display: flex;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 90px;
+            margin-top: 50px;
+        }
+
+        #services #large_images {
+
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin: 0px 90px;
+            margin-bottom: 45px;
+        }
+
+
+        #services img {
+            /* position: absolute; */
+            width: 400px;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        #boxing {
+            margin: 10px 20px;
+            /* margin-left: 80px; */
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #yoga {
+            margin: 10px 20px;
+            /* margin-left: 80px; */
+            display: flex;
+            flex-direction: column
+        }
+
+        #cardio {
+
+            margin: 10px 20px;
+            /* margin-left:80px; */
+            display: flex;
+            flex-direction: column
+        }
+
+        .img_text {
+
+            height: 30px;
+            width: 400px;
+            background-color: rgb(74, 72, 72);
+            color: whitesmoke;
+            text-align: center;
+            padding: 10px 0px;
+            font-size: 1.5em;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+
+        }
+
+        .img_text:hover {
+            background-color: rgb(54, 54, 54);
+            ;
+            color: orangered;
+            cursor: pointer;
+        }
+
+        #group_exercise {
+            margin: 10px 20px;
+
+            display: flex;
+            flex-direction: column
+        }
+
+        #weight_training {
+            margin: 10px 20px;
+            /* padding: 0px 30px; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        #group_exercise img {
+            width: 400px;
+            height: 300px;
+
+        }
+
+        #weight_training img {
+            width: 400px;
+            height: 300px;
+        }
+
+        .img_text1 {
+            font-family: sans-serif;
+            height: 30px;
+            width: 400px;
+            background-color: rgb(74, 72, 72);
+            color: whitesmoke;
+            text-align: center;
+            padding: 10px 0px;
+            font-size: 1.5em;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+        }
+
+        .img_text1:hover {
+            background-color: rgb(54, 54, 54);
+            ;
+            color: orangered;
+            cursor: pointer;
+        }
+
+
+        .container3 {
+            width: 1500px;
+            height: 680px;
+            background-image: url(gym4.2bg.jpg);
+            background-size: 100% 100%;
+            background-position: cover;
+            background-repeat: no-repeat;
+
+            color: rgb(249, 247, 247);
+        }
+
+        .container3_part {
+            /* border: 2px solid red; */
+            width: 1500px;
+            height: 680px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content:center ; */
+            /* align-items: center; */
+            /* margin: auto auto; */
+        }
+
+        .top_heading {
+            color: white;
+            font-size: 3.35em;
+            font-weight: bolder;
+            /* font-family: sans-serif; */
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+        .sub_heading {
+            color: white;
+            font-size: 1.5em;
+            letter-spacing: 1px;
+            font-weight: lighter;
+            margin: 20px 330px;
+        }
+
+        #btn_appointment {
+
+            letter-spacing: 1px;
+            width: 165px;
+            padding: 7px 15px;
+            margin: 10px 450px;
+            font-size: 1.25em;
+            color: whitesmoke;
+            font-weight: bold;
+            border: 2px solid orangered;
+        }
+
+        #btn_appointment:hover {
+            background-color: orangered;
+            color: black;
+            cursor: pointer;
+        }
+
+        .container4 {
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+            /* width: 1500px; */
+            /* height: 750px; */
+        }
+
+        .container4_1 {
+            background-color: rgb(24, 24, 24);
+            width: 1500px;
+
+        }
+
+        #our_plan_heading {
+            font-size: 1.1em;
+            /* display: flex;
+            flex-wrap: wrap; */
+            font-weight: lighter;
+            color: orangered;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 1em;
+            margin: 10px auto;
+
+        }
+
+        #our_plan_heading1 {
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+
+        .plan {
+
+            /* width: 1500px; */
+            /* height: 600px; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        .price_plan {
+            width: 300px;
+            height: 410px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 0.25px solid rgb(96, 95, 95);
+            margin: 2em 1.5em;
+            padding: .8em 1.5em;
+            text-align: center;
+            transition: all 0.5s;
+        }
+
+        .price_plan:hover {
+            border: 1px solid white;
+            cursor: pointer;
+            width: 312px;
+            height: 412px;
+            /* font-size: large; */
+        }
+
+
+        .price_plan h3 {
+            color: white;
+            font-size: 1.75em;
+            margin: 15px 10px;
+            font-weight: lighter;
+        }
+
+        .price_plan h1 {
+            color: orangered;
+            font-size: 3.0em;
+            margin: 0px 10px;
+        }
+
+        .price_plan h5 {
+            color: white;
+            font-size: 1em;
+            font-weight: lighter;
+            opacity: .7;
+            margin: 8px 10px;
+        }
+
+        #first_plan {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #second_plan {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #third_plan {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .enroll_btn {
+            width: 250px;
+            height: 45px;
+            margin: 0px auto;
+            margin-top: 25px;
+            text-transform: uppercase;
+            outline: none;
+            font-size: 1.1em;
+            font-family: 'Ubuntu', sans-serif;
+            background-color: rgb(75, 74, 74);
+            color: white;
+
+        }
+
+        .enroll_btn:hover {
+            background-color: orangered;
+            color: black;
+            cursor: pointer;
+            width: 255px;
+            height: 48px;
+
+        }
+
+        .container5 {
+            width: 1500px;
+            height: 1030px;
+            background-color: rgb(24, 24, 24);
+        }
+
+        .first_row_image img {
+            width: 370px;
+            height: 510px;
+            margin: 5px 1.22px;
+        }
+
+        .second_row_image img {
+            width: 357px;
+            height: 510px;
+            margin: 0px 1.22px;
+        }
+
+        #second_row_image_1 {
+            margin-left: 12px;
+        }
+
+        #first_row_image_1 {
+            width: 720px;
+            margin-left: 12px;
+        }
+
+        #second_row_image_3 {
+            width: 745px;
+        }
+
+        .container6 {
+            /* width: 1500px;
+            height: 830px; */
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+            /* align-items: center; */
+            color: white;
+        }
+
+        .container6_1_1 {
+
+            width: 1500px;
+            /* height: 750px; */
+            background-color: rgb(24, 24, 24);
+            display: wrap;
+            flex-wrap: wrap;
+            margin-left: 0px;
+
+        }
+
+        .container_6_1 {
+            /* position: absolute; */
+            /* width: 1300px; */
+            /* height: 748px; */
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px 20px
+        }
+
+        .our_trainer {
+            padding: 20px 5px;
+
+        }
+
+        #our_trainer_heading {
+            font-size: 1.1em;
+            font-weight: lighter;
+            color: orangered;
+            text-align: center;
+            margin: 8px 12px
+        }
+
+        #our_trainer_heading1 {
+            text-align: center;
+            margin: 2px 12px;
+            margin-bottom: 20px;
+            justify-content: center;
+
+        }
+
+        .trainer_image {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+
+            /* align-items: center; */
+
+        }
+
+        .trainer_image img {
+
+            width: 380px;
+            height: 460px;
+            margin: 15px 10px;
+
+        }
+
+        /* .our_trainer_appointment_btn{
+           margin-top: 20px;
+           margin-left: 100px;
+        } */
+        #trainer_btn_appointment {
+            font-size: .8em;
+            width: 95px;
+            padding: 8px 10px;
+            margin: 50px 120px;
+            /* font-weight: bold; */
+            /* float: right; */
+            letter-spacing: .5px;
+            border: 1px solid orangered;
+        }
+
+        .our_trainer_appointment_btn:hover {
+            cursor: pointer;
+            color: black;
+        }
+
+        #trainer_btn_appointment:hover {
+            background-color: orangered;
+        }
+
+        .container7 {
+            height: 550px;
+            width: 1500px
+        }
+
+        .container7_1 {
+            width: 1500px;
+            height: 300px;
+            background-color: rgb(18, 20, 20);
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container7_1 div {
+            width: 350px;
+            height: 85px;
+            margin: 0px 30px;
+
+        }
+
+        .container7_2 {
+            width: 1500px;
+            height: 400px;
+            background-color: rgb(24, 24, 24);
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container7_2 div {
+            width: 350px;
+            height: 250px;
+            margin: 0px 30px;
+
+        }
+
+        #location img {
+            margin: 10px 25px;
+            padding: 15px 15px;
+            width: 50px;
+            height: 50px;
+            background-color: orangered;
+            opacity: .85;
+
+            border-radius: 50%;
+        }
+
+        #location {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #location_address {
+            margin-top: 20px;
+            margin-left: 0px;
+            opacity: .85;
+            font-weight: lighter;
+        }
+
+        #location_address:hover {
+            cursor: pointer;
+        }
+
+
+        #mobile img {
+            margin: 10px 25px;
+            padding: 15px 15px;
+            width: 50px;
+            height: 50px;
+            background-color: orangered;
+            opacity: .85;
+            border: 1px solid red;
+            border-radius: 50%;
+        }
+
+        #mobile {
+            display: flex;
+            flex-direction: row;
+            opacity: .85;
+        }
+
+        #mobile_no {
+            margin-top: 20px;
+            margin-left: 0px;
+            font-weight: lighter;
+        }
+
+        #mobile_no:hover {
+            cursor: pointer;
+        }
+
+        #mail img {
+            margin: 10px 25px;
+            padding: 15px 15px;
+            width: 50px;
+            height: 50px;
+            background-color: orangered;
+            opacity: .85;
+            border: 1px solid red;
+            border-radius: 50%;
+        }
+
+        #mail {
+            display: flex;
+            flex-direction: row;
+        }
+
+      
+
+        #mail_address {
+            margin-top: 20px;
+            margin-left: 0px;
+            opacity: .85;
+            font-weight: lighter;
+        }
+        #mail_address:hover{
+            cursor: pointer;
+        }
+
+        #about img {
+            width: 10em;
+            height: 8em;
+            margin: 2px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #about h3 {
+            margin-bottom: 6px;
+            text-align: center
+        }
+
+        #about h3 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #about h3 a:hover {
+            color: orangered;
+        }
+
+        #about p {
+
+            margin-bottom: 6px;
+            text-align: center
+        }
+
+        #links_support div {
+            width: 1510px;
+            height: 200px;
+            margin: 0px 10px;
+            padding: 10px 0px;
+
+        }
+
+        #links_support {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #useful_links h3 {
+            text-decoration: none;
+            letter-spacing: .75px;
+            font-size: 1.5em;
+            margin-top: 10px;
+            margin-bottom: 25px;
+
+        }
+
+        #useful_links h3 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #useful_links h3 a:hover {
+            color: orangered;
+        }
+
+        #useful_links h5 {
+            margin: 20px 0px;
+            font-weight: lighter;
+            opacity: .8;
+
+        }
+
+        #useful_links h5 a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        #support h3 {
+            letter-spacing: .75px;
+            font-size: 1.5em;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+
+        #support h5 {
+            /* text-align: center; */
+            margin: 20px 0px;
+            font-weight: lighter;
+            opacity: .8;
+        }
+
+        #support h5 a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        #support h3 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #support h3 a:hover {
+            color: orangered;
+        }
+
+
+
+        #tips_guide h4 {
+            font-size: 1.5em;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        #tips_guide h4 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #tips_guide h4 a:hover {
+            color: orangered;
+        }
+
+        #tips_guide p {
+            font-weight: lighter;
+            opacity: .8;
+        }
+
+        #tips_guide hr {
+            width: 250px;
+
+            margin-bottom: 15px;
+            margin-left: 40px;
+            opacity: .3;
+
+        }
+
+
+
+
+        /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+        /* @media screen and (max-width:1520px) {
+            .container2 {
+                
+               width: 1500px;
+               
+            } */
+
+
+        @media screen and (max-width:1200px) {
+            .container {
+                background-size: 1200px 750px;
+                width: 1200px;
+                height: 740px;
+            }
+
+            .link ul li {
+                margin: 0.8em 15px;
+                font-size: 1.25em;
+                /* padding: 2px 10px; */
+            }
+
+            #text {
+                margin-left: 5%;
+                font-size: 3.75em;
+            }
+
+            #text2 {
+                margin: 1em 5%;
+                font-size: 1.5em;
+            }
+
+            #text3 {
+                margin: 0em 5%;
+                font-size: 3em;
+            }
+
+            .btn {
+                width: 10em;
+                height: 3em;
+                margin: 1em 5%;
+            }
+
+            .container1 {
+                width: 1200px;
+                height: 650px;
+            }
+
+            #box4 {
+                display: none;
+            }
+
+            .container2 {
+                /* height: 1100px; */
+                width: 1200px;
+
+            }
+
+            /*
+            #services img {
+                width: 360px;
+                height: 300px;
+            }
+
+            #group_exercise img {
+                width: 570px;
+                height: 300px;
+
+            }
+
+            #weight_training img {
+                width: 570px;
+                height: 300px;
+            }
+
+            .img_text {
+                width: 360px;
+            }
+
+            .img_text1 {
+                width: 570px;
+            } */
+
+            .container3 {
+                width: 1200px;
+                height: 550px;
+                background-size: 100% 100%;
+            }
+
+            .container3_part {
+                width: 1200px;
+                height: 680px;
+            }
+
+            .top_heading {
+                font-size: 2.5em;
+                margin-top: 115px;
+                margin-left: 20px;
+            }
+
+            .sub_heading {
+                font-size: 1.0em;
+                letter-spacing: 1px;
+                margin: 20px 250px;
+            }
+
+            #btn_appointment {
+                width: 160px;
+                padding: 7px 15px;
+                margin: 10px 325px;
+                font-size: 1.2em;
+            }
+
+            /* .container4 {
+                width: 1200px;
+            } */
+
+            /* .plan {
+                width: 1200px;
+                height: 550px;
+            } */
+
+            .price_plan h1 {
+                font-size: 2.5em;
+
+            }
+
+            .price_plan h5 {
+                font-size: 0.8em;
+            }
+
+            /* .price_plan {
+                
+                height: 450px;
+            } */
+
+            .price_plan:hover {
+                cursor: pointer;
+                width: 300px;
+                height: 480px;
+                font-size: large;
+            }
+
+            .container5 {
+                width: 1200px;
+                height: 1080px;
+            }
+
+            #first_row_image_1 {
+                height: 510px;
+                width: 420px;
+                margin-left: 12px;
+            }
+
+            #second_row_image_3 {
+                width: 445px;
+                height: 510px;
+            }
+
+            /* .container6 {
+                width: 1200px;
+                height: 700px;
+            } */
+
+
+
+            /* #our_trainer_heading {
+                margin: 8px 50px
+            }
+
+            #our_trainer_heading1 {
+                margin: 8px 50px
+            }
+
+            #trainer_btn_appointment {
+                margin-right: 55px;
+            }
+
+            .trainer_image img {
+                width: 350px;
+                margin: 10px 10px;
+            } */
+
+            .container7_1 {
+                width: 1200px;
+                height: 300px;
+            }
+
+            .container7_1 div {
+                width: 350px;
+                height: 85px;
+                margin: 0px 30px;
+            }
+
+            .container7_2 {
+                width: 1200px;
+                height: 400px;
+            }
+        }
+
+        /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+        @media screen and (max-width:1000px) {
+            .container {
+                background-size: 1000px 750px;
+                width: 1000px;
+                height: 740px;
+            }
+
+            .logo img {
+                width: 10em;
+                height: 8em;
+                margin: 10px 25px;
+            }
+
+            .link ul li {
+                margin: 0.8em 10px;
+                font-size: 1.0em;
+                /* padding: 2px 10px; */
+            }
+
+            #text {
+                margin-left: 5%;
+                font-size: 2.75em;
+            }
+
+            #text2 {
+                margin: 1em 5%;
+                font-size: 1.25em;
+            }
+
+            #text3 {
+                margin: 0em 5%;
+                font-size: 2.2em;
+            }
+
+            .btn {
+                width: 8em;
+                height: 2.75em;
+                margin: 1em 5%;
+            }
+
+            .container1 {
+                width: 1000px;
+                height: 625px;
+            }
+
+            .box {
+                width: 250px;
+                height: 250px;
+                margin: 50px 15px;
+                padding: 0px 10px;
+            }
+
+            .images {
+                width: 115px;
+                height: 105px;
+                margin: 10px 4.7em;
+            }
+
+            .heading_img {
+                font-size: 1.5em;
+                padding: 5px 2px;
+                margin: 5px auto;
+            }
+
+            .paragraph_img {
+                font-size: 0.85em;
+            }
+
+            .container2 {
+                width: 1000px;
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+
+            /*
+            #services img {
+                width: 300px;
+                height: 300px;
+            }
+
+            #group_exercise img {
+                width: 480px;
+                height: 300px;
+
+            }
+
+            #weight_training img {
+                width: 480px;
+                height: 300px;
+            }
+
+            .img_text {
+                width: 300px;
+                height: 25px;
+                font-size: 1em;
+                letter-spacing: 1px;
+            }
+
+            .img_text1 {
+                height: 25px;
+                width: 480px;
+                font-size: 1em;
+                letter-spacing: 1px;
+            }
+
+            #middle_heading {
+                font-size: 1em;
+            }
+
+            #middle_heading2 {
+                font-size: 2em;
+            } */
+
+            .container3 {
+                width: 1000px;
+                height: 550px;
+                background-size: 100% 100%;
+            }
+
+            .container3_part {
+                width: 1000px;
+                height: 680px;
+            }
+
+            .top_heading {
+                font-size: 2em;
+                margin-top: 115px;
+                margin-left: 40px;
+            }
+
+            .sub_heading {
+                font-size: .95em;
+                letter-spacing: 1px;
+                margin: 20px 200px;
+            }
+
+            #btn_appointment {
+                width: 130px;
+                padding: 7px 15px;
+                margin: 10px 300px;
+                font-size: 1em;
+            }
+
+            /* .container4 {
+                width: 1000px;
+                height: 725px;
+            }
+
+            .plan {
+                width: 1000px;
+                height: 500px;
+            } */
+
+            .price_plan h1 {
+                font-size: 2.2em;
+
+            }
+
+            .price_plan h5 {
+                font-size: 0.7em;
+            }
+
+            .price_plan {
+                width: 230px;
+                height: 400px;
+            }
+
+            .price_plan:hover {
+                cursor: pointer;
+                width: 250px;
+                height: 420px;
+                font-size: large;
+            }
+
+            .enroll_btn {
+                width: 180px;
+                height: 35px;
+            }
+
+            .enroll_btn:hover {
+                width: 190px;
+                height: 35px;
+            }
+
+            .container5 {
+                width: 1000px;
+                height: 1030px;
+            }
+
+            .first_row_image img {
+                width: 315px;
+                height: 460px;
+                margin: 5px 1.22px;
+            }
+
+            .second_row_image img {
+                width: 315px;
+                height: 460px;
+                margin: 0px 1.22px;
+            }
+
+            #first_row_image_1 {
+                height: 460px;
+                width: 315px;
+                margin-left: 12px;
+            }
+
+            #second_row_image_3 {
+                width: 315px;
+                height: 460px;
+            }
+
+            /* .container6 {
+                width: 1000px;
+                height: 600px;
+                
+            }
+
+
+            #our_trainer_heading {
+                margin-top: 18px;
+                margin-left: 25px;
+                font-size: 1em;
+            }
+
+            #our_trainer_heading1 {
+                font-size: 1.5em;
+                margin: 8px 25px
+            }
+
+            #trainer_btn_appointment {
+                margin-right: 30px;
+                font-size: .75em;
+                width: 90px;
+                padding: 5px 8px;
+
+            }
+
+            .trainer_image img {
+               
+                width: 300px;
+                height: 400px;
+                margin: 10px 10px;
+            } */
+
+            .container7_1 {
+                width: 1000px;
+                height: 300px;
+            }
+
+            .container7_1 div {
+                width: 300px;
+                height: 80px;
+                margin: 0px 30px;
+            }
+
+            .container7_2 {
+                width: 1000px;
+                height: 400px;
+            }
+
+            #location img {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+            }
+
+            #location_address {
+                font-size: 0.8em;
+            }
+
+            #mobile img {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+            }
+
+            #mobile_no {
+                font-size: 0.8em;
+            }
+
+            #mail img {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+            }
+
+            #mail_address {
+                font-size: 0.8em;
+            }
+
+            #links_support div {
+                width: 1000px;
+                height: 200px;
+            }
+
+            #useful_links h3 {
+                font-size: 1em;
+
+            }
+
+            #support h3 {
+                letter-spacing: .75px;
+                font-size: 1em;
+            }
+
+            #support h5 {
+
+                font-weight: lighter;
+                opacity: .8;
+            }
+
+            #tips_guide h4 {
+                font-size: 1em;
+
+            }
+
+            #about img {
+                width: 8em;
+                height: 8em;
+            }
+
+            #about h3 {
+                font-size: 1.2em;
+            }
+
+            #about p {
+                font-size: .75em;
+                opacity: .8;
+            }
+
+            #tips_guide h4 {
+                font-size: 1em;
+                margin-top: 35px;
+                margin-bottom: 20px;
+            }
+
+            #tips_guide p {
+                font-size: 0.8em;
+                opacity: .8;
+            }
+
+
+        }
+
+        /* ---------------------------------------------------? */
+        @media screen and (max-width:800px) {
+            .container {
+                width: 800px;
+                background-size: 1100px 700px;
+                height: 700px;
+            }
+
+            .logo img {
+                width: 8em;
+                height: 6em;
+                margin: 10px 25px;
+            }
+
+            .link ul li {
+                margin: 0.8em 8px;
+                font-size: 1.0em;
+
+            }
+
+            #text {
+                margin-left: 7%;
+                font-size: 2.5em;
+            }
+
+            #text2 {
+                margin: 1em 7%;
+                font-size: 1.0em;
+            }
+
+            #text3 {
+                margin: 0em 7%;
+                font-size: 2.0em;
+            }
+
+            .btn {
+                width: 8em;
+                height: 2.5em;
+                margin: 1.5em 7%;
+            }
+
+            .container1 {
+                width: 800px;
+                height: 670px;
+
+            }
+
+            .box {
+                width: 250px;
+                height: 250px;
+                margin: 50px 10px;
+                padding: 0px 10px;
+            }
+
+            .images {
+                width: 100px;
+                height: 90px;
+                margin: 10px 4.0em;
+            }
+
+            .heading_img {
+                font-size: 1.0em;
+                padding: 5px 2px;
+                margin: 5px 15px;
+            }
+
+            .paragraph_img {
+                font-size: 0.85em;
+            }
+
+            .container2 {
+                /* height: 1000px; */
+                width: 800px;
+            }
+
+            /*
+            #boxing {
+                display: none;
+            }
+
+            #services img {
+                width: 380px;
+                height: 300px;
+            }
+
+            #group_exercise img {
+                width: 380px;
+                height: 300px;
+            }
+
+            #weight_training img {
+                width: 380px;
+                height: 300px;
+            }
+
+            #yoga {
+                margin: 3px 5px;
+            }
+
+            #cardio {
+                margin: 3px 5px;
+            }
+
+            .img_text {
+                width: 380px;
+                height: 20px;
+                font-size: 0.8em;
+            }
+
+            .img_text1 {
+                height: 20px;
+                width: 380px;
+                font-size: 0.8em;
+            }
+
+            #middle_heading {
+                font-size: 1.3em;
+            }
+
+            #middle_heading2 {
+                font-size: 1.7em;
+            } */
+
+            .container3 {
+                width: 800px;
+                height: 500px;
+                background-size: 100% 100%;
+            }
+
+            .container3_part {
+                width: 800px;
+                height: 500px;
+            }
+
+            .top_heading {
+                font-size: 1.65em;
+            }
+
+            .sub_heading {
+                font-size: .95em;
+                margin: 20px 130px;
+            }
+
+            #btn_appointment {
+                width: 100px;
+                margin: 10px 230px;
+                font-size: 0.8em;
+            }
+
+            /* .container4 {
+                width: 800px;
+                height: 725px;
+            }
+
+            .plan {
+                width: 800px;
+                height: 500px;
+            } */
+
+            #our_plan_heading {
+                font-size: 1em;
+            }
+
+            #our_plan_heading1 {
+                font-size: 1.25em;
+            }
+
+            .price_plan h1 {
+                font-size: 2.2em;
+
+            }
+
+            .price_plan h3 {
+                font-size: 1.5em;
+
+            }
+
+            .price_plan h5 {
+                font-size: 0.85em;
+            }
+
+            /* .price_plan {
+                width: 180px;
+                height: 380px;
+                margin: 10px;
+            } */
+
+            .price_plan:hover {
+                cursor: pointer;
+                width: 200px;
+                height: 390px;
+                font-size: large;
+            }
+
+            .enroll_btn {
+                width: 140px;
+                height: 35px;
+                font-size: 1em;
+            }
+
+            .enroll_btn:hover {
+                width: 145px;
+                height: 35px;
+            }
+
+            .container5 {
+                width: 800px;
+                height: 1030px;
+            }
+
+            .first_row_image img {
+                width: 380px;
+                height: 460px;
+                margin: 5px 9px;
+            }
+
+            .second_row_image img {
+                width: 377px;
+                height: 460px;
+                margin: 5px 9px;
+            }
+
+            #first_row_image_1 {
+                display: none;
+            }
+
+            #second_row_image_3 {
+                display: none;
+            }
+
+
+
+            .container7_1 {
+                width: 800px;
+                height: 300px;
+            }
+
+            .container7_1 div {
+                width: 250px;
+                height: 80px;
+                margin: 0px 10px;
+            }
+
+            .container7_2 {
+                width: 800px;
+                height: 400px;
+            }
+
+            .container7_2 div {
+                width: 250px;
+                height: 250px;
+                margin: 0px 18px;
+
+            }
+
+            #location img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+
+            #location_address {
+                font-size: 0.85em;
+            }
+
+            #mobile img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+
+            #mobile_no {
+                font-size: 0.85em;
+            }
+
+            #mail img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+
+            #mail_address {
+                font-size: 0.85em;
+            }
+
+            #links_support div {
+                width: 800px;
+                height: 200px;
+            }
+
+            #useful_links h3 {
+                font-size: 0.9em;
+
+            }
+
+            #support h3 {
+                letter-spacing: .65px;
+                font-size: 0.85em;
+            }
+
+            #support h5 {
+
+                font-weight: lighter;
+                opacity: .8;
+            }
+
+            #tips_guide h4 {
+                font-size: 0.85em;
+
+            }
+
+            #about img {
+                width: 6em;
+                height: 6em;
+            }
+
+            #about h3 {
+                font-size: 0.85em;
+            }
+
+            #about p {
+                font-size: .65em;
+                opacity: .8;
+            }
+
+            #tips_guide h4 {
+                font-size: 0.85em;
+                margin-top: 35px;
+                margin-bottom: 20px;
+            }
+
+            #tips_guide hr {
+                display: none;
+            }
+
+            #tips_guide p {
+                font-size: 0.75em;
+                opacity: .8;
+            }
+
+        }
+
+        @media screen and (max-width:500px) {
+
+            .container {
+                width: 500px;
+                background-size: 800px 500px;
+                height: 499px;
+            }
+
+            .logo img {
+                width: 6em;
+                height: 5em;
+                margin: 10px 15px;
+            }
+
+            .link ul li {
+                margin: 0.8em 5px;
+                font-size: .8em;
+
+            }
+
+            #text {
+                margin-left: 5%;
+                font-size: 1.75em;
+            }
+
+            #text2 {
+                margin: 1em 5%;
+                font-size: .65em;
+            }
+
+            #text3 {
+                margin: 0em 5%;
+                font-size: 1.5em;
+            }
+
+            .btn {
+                width: 8.0em;
+                height: 2.25em;
+                margin: 1.5em 5%;
+            }
+
+            .container1 {
+                width: 500px;
+                height: 670px;
+
+            }
+
+            .box {
+                width: 200px;
+                height: 200px;
+                margin: 50px 10px;
+                padding: 0px 10px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            #heading2 {
+                font-size: 1.5em;
+            }
+
+
+            .images {
+                width: 70px;
+                height: 60px;
+                margin: 10px .5em;
+            }
+
+            .heading_img {
+                font-size: 1.15em;
+                padding: 5px 2px;
+                margin: 5px 5px;
+                display: inline-block;
+            }
+
+            .paragraph_img {
+                font-size: 0.85em;
+                margin: 20px 0px;
+                /* display: none; */
+            }
+
+            .container2_1 {
+                width: 500px;
+
+            }
+
+            #services img {
+                width: 250px;
+                height: 200px;
+            }
+
+            #group_exercise img {
+                width: 250px;
+                height: 200px;
+            }
+
+            #weight_training img {
+                width: 250px;
+                height: 200px;
+            }
+
+
+
+            .img_text {
+                width: 250px;
+                height: 20px;
+                font-size: 0.8em;
+            }
+
+            .img_text1 {
+                height: 20px;
+                width: 250px;
+                font-size: 0.8em;
+            }
+
+            #middle_heading {
+                font-size: 1.2em;
+            }
+
+            #middle_heading2 {
+                font-size: 1.5em;
+            }
+
+            .container3 {
+                width: 500px;
+                height: 600px;
+                background-size: 500px 600px;
+            }
+
+            .container3_part {
+                width: 500px;
+                height: 450px;
+            }
+
+            .top_heading {
+                font-size: 1.35em;
+                margin-left: 10px;
+                margin-top: 250px;
+                /* font-weight: lighter */
+            }
+
+            .sub_heading {
+                font-size: 1.0em;
+                margin: 20px 50px;
+            }
+
+            #btn_appointment {
+                width: 100px;
+                margin: 10px 150px;
+                font-size: 0.8em;
+            }
+
+            .container7_1 {
+                width: 500px;
+                height: 300px;
+            }
+
+            .container5 {
+                display: none;
+            }
+
+            .container7_1 div {
+                width: 150px;
+                height: 80px;
+                margin: 0px 12px;
+            }
+
+            .container7_2 {
+                width: 500px;
+                height: 400px;
+            }
+
+            .container7_2 div {
+                width: 200px;
+                height: 200px;
+                margin: 0px 5px;
+
+            }
+
+            #location img {
+                margin: 10px 7px;
+                margin-left: 0px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+            }
+
+            #location_address {
+                font-size: 0.75em;
+                margin-right: 0px;
+
+            }
+
+            #mobile {
+                width: 120px;
+                margin-right: 10px;
+            }
+
+            #mobile img {
+                margin: 10px 7px;
+                margin-left: 0px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+            }
+
+            #mobile_no {
+                margin-right: 0px;
+                font-size: 0.75em;
+            }
+
+            #mail img {
+                margin: 10px 5px;
+                margin-left: 00px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+            }
+
+            #mail_address {
+                font-size: 0.75em;
+            }
+
+            #links_support div {
+                width: 500px;
+                height: 200px;
+            }
+
+            #useful_links h3 {
+                font-size: 0.75em;
+
+            }
+
+            #useful_links h5 {
+                font-size: 0.7em;
+            }
+
+
+            #support h3 {
+                letter-spacing: .65px;
+                font-size: 0.75em;
+            }
+
+            #support h5 {
+                font-size: 0.7em;
+                font-weight: lighter;
+                opacity: .75;
+            }
+
+            #tips_guide h4 {
+                font-size: 0.75em;
+
+            }
+
+            #about img {
+                width: 4em;
+                height: 4em;
+            }
+
+            #about h3 {
+                font-size: 0.75em;
+            }
+
+            #about p {
+                font-size: .75em;
+                opacity: .8;
+            }
+
+            #tips_guide h4 {
+                font-size: 0.75em;
+                margin-top: 25px;
+                margin-bottom: 20px;
+
+            }
+
+
+            #tips_guide p {
+                margin-right: 10px;
+                font-size: 0.73em;
+                opacity: .8;
+
+            }
+
+
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <a name="home"></a>
+    <div class="container">
+        <div class="link">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#ser">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Home page start -->
+        <div class="logo">
+            <img src="new_logo1.jpg" alt="image loading">
+        </div>
+
+        <h1 id="text">WELCOME To <span id="a1">Fitness Adda </span></h1>
+        <h3 id="text2">SHAPE YOUR BODY</h3>
+        <h2 id="text3">BE <span id="a2">STRONG</span> <br> TRAINING <span id="a2">HARD</span></h2>
+        <button class="btn">GET &nbsp;INFO</button>
+    </div>
+        <!-- 2nd page reralted to what type of services gym provide -->
+    <div class="container1">
+        <h3 id="top_heading"><span class="heading_1">WHY CHOOSE US</span></h3>
+        <h1 id="heading2">PUSH YOUR LIMIT FORWARD</h1>
+        <div class="boxes">
+            <div id="box1" class="box"><img src="icon11.png" class="images">
+                <h3 class="heading_img">Modern Equipment</h3>
+                <p class="paragraph_img">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod
+                    <br> tempor
+                    ncididunt ut dolore..</li>
+                </p>
+            </div>
+            <div id="box2" class="box"><img src="icon2.png" class="images">
+                <h3 class="heading_img">Nutrition Plan</h3>
+                <p class="paragraph_img">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod
+                    <br>tempor
+                    ncididunt ut dolore.. </li>
+                </p>
+            </div>
+            <div id="box3" class="box"><img src="icon3.png" class="images">
+                <h3 class="heading_img">Professional Training</h3>
+                <p class="paragraph_img">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod
+                    <br>tempor
+                    ncididunt ut dolore.. </li>
+                </p>
+            </div>
+            <div id="box4" class="box"><img src="icon4.png" class="images">
+                <h3 class="heading_img">Fresh Environment</h3>
+                <p class="paragraph_img">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod
+                    <br>tempor
+                    ncididunt ut dolore.. </li>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+        <!-- 3rd page about Gym Classes  -->
+    <div class="container2">
+        <div class="container2_1">
+            <a name="ser"></a>
+            <h3 id="middle_heading"><span class="middle_heading_1">OUR CLASSES</span></h3> <br>
+            <h1 id="middle_heading2">WHAT WE CAN OFFER</h1>
+            <div id="services">
+                <div id="short_images">
+                    <div id="boxing">
+                        <img src="boxing.jpg">
+                        <span class="img_text">BOXING</span>
+                    </div>
+                    <div id="yoga">
+                        <img src="yoga.jpg">
+                        <span class="img_text">YOGA</span>
+                    </div>
+                    <div id="cardio">
+                        <img src="cardio.jpg">
+                        <span class="img_text">CARDIO</span>
+                    </div>
+                </div>
+
+                <div id="large_images">
+                    <div id="group_exercise">
+                        <img src="group_exercising.jpg">
+                        <span class="img_text1">GROUP EXERCISING</span>
+                    </div>
+                    <div id="weight_training">
+                        <img src="weight_training.jpg">
+                        <span class="img_text1"> &nbsp;&nbsp;WEIGHT TRAINING </span>
+                    </div>
+                    <div id="weight_training">
+                        <img src="bodyweight.webp">
+                        <span class="img_text1"> &nbsp;&nbsp;BODY WEIGHT TRAINING </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 4th page ,, its for just a membership and registration -->
+    <div class="container3">
+        <div class="container3_part">
+            <a name="membership"></a>
+            <div class="top_heading">
+                REGISTRATION NOW TO GET MORE DEALS
+            </div>
+            <div class="sub_heading">
+                WHERE HEALTH,BEUTY AND FITNESS MEEET.
+            </div>
+            <div id="btn_appointment">APPOINTMENT</div>
+        </div>
+    </div>
+      <!-- 6th page , this page provides details about Gym plan and pricing -->
+         <div class="container4">
+        <div class="container4_1">
+            <h3 id="our_plan_heading"><span class="">OUR PLAN</span></h3>
+            <h1 id="our_plan_heading1">CHOOSE YOUR PRICING PLAN</h1>
+            <div class="plan">
+
+                <div class="price_plan" id="first_plan">
+                    <h3>1 year plan</h3>
+                    <h1>Rs 12000</h1>
+                    <h5>personal Trainer</h5>
+                    <h5>Diet Plan</h5>
+                    <h5>Strength Training</h5>
+                    <h5>Cardio</h5>
+                    <h5>Treadmill</h5>
+                    <button class="enroll_btn">Enroll Now </button>
+
+
+                </div>
+                <div class="price_plan" id="second_plan">
+                    <h3>6 month plan</h3>
+                    <h1>Rs 8000</h1>
+                    <h5>personal Trainer</h5>
+                    <h5>Diet Plan</h5>
+                    <h5>Strength Training</h5>
+                    <h5>Cardio</h5>
+                    <h5>Treadmill</h5>
+                    <button class="enroll_btn">Enroll Now </button>
+
+                </div>
+                <div class="price_plan" id="third_plan">
+                    <h3>3 month plan</h3>
+                    <h1>Rs 6000</h1>
+                    <h5>personal Trainer</h5>
+                    <h5>Diet Plan</h5>
+                    <h5>Strength Training</h5>
+                    <h5>Cardio</h5>
+                    <h5>Treadmill</h5>
+                    <button class="enroll_btn">Enroll Now </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 7th page related to gym member images -->
+    <div class="container5">
+        <div class="image_gallery">
+            <div class="first_row_image">
+                <img src="wallpaper2.jpeg" class="" id="first_row_image_1">
+                <img src="wallpaper1.webp" alt="" id="first_row_image_2">
+                <img src="wallpaper3.webp" alt="" id="first_row_image_3">
+            </div>
+            <div class="second_row_image">
+                <img src="wallpaper8.jpeg" alt="" id="second_row_image_1">
+                <img src="wallpaper9.webp" alt="" id="second_row_image_2">
+                <img src="wallpaper10.jpeg" alt="" id="second_row_image_3">
+            </div>
+        </div>
+    </div>
+        <!-- 8th page related to gym Trainer images -->
+
+    <div class="container6">
+        <div class="container6_1_1">
+            <div class="container_6_1">
+                <div class="our_trainer">
+                    <h3 id="our_trainer_heading">OUR TRAINERS </h3>
+
+                    <h1 id="our_trainer_heading1">TRAIN WITH EXPERT </h1>
+                    <span id="trainer_btn_appointment">APPOINTMENT</span>
+                </div>
+                <div class="our_trainer_appointment_btn">
+
+                </div>
+                <div class="trainer_image">
+                    <img src="trainer.webp" alt="image loading">
+                    <img src="trainer2.jpeg" alt="image loading">
+                    <img src="trainer3.webp" alt="image loading" id="trainer_image3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- 9th page shows contact details of gym -->
+
+    <a name="contact"></a>
+    <div class="container7">
+        <div class="container7_1">
+            <div id="location"><img src="location.icon.png" alt="icon loading"><span id="location_address"> Indira Nagar
+                    A block Lekhraj Market 226026 oppsite to ABC school </span></div>
+            <div id="mobile"><img src="mobile.icon.png" alt="icon loading"><span id="mobile_no"> 9988776655 <br>
+                    9876543210 <br>0521-4536</span></div>
+            <div id="mail"><img src="mail.icon1.png" alt="icon loading"><span id="mail_address"> abc@gmail.com
+                    <br>xyz@gmail.com <br>123@gmail.com</span></div>
+        </div>
+        <a name="about"></a>
+
+            <!-- 10th page about to Gym important links and about section -->
+
+        <div class="container7_2">
+            <div id="about"><img src="new_logo1.jpg" alt="icon loading">
+                <h3><a href="">Fitnes Adda</a></h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, perferendis</p>
+            </div>
+            <div id="links_support">
+                <div id="useful_links">
+                    <h3><a href=""> Useful links</a></h3>
+                    <h5><a href=""> About</a></h5>
+                    <h5><a href=""> Blog</a></h5>
+                    <h5><a href=""> Classes</a></h5>
+                    <h5><a href=""> Contact</a></h5>
+                </div>
+                <div id="support">
+                    <h3><a href=""> Support</a></h3>
+                    <h5><a href=""> Login</a></h5>
+                    <h5><a href=""> My account</a></h5>
+                    <h5><a href=""> Subscribe</a></h5>
+                    <h5><a href=""> Contact</a></h5>
+                </div>
+            </div>
+            <div id="tips_guide">
+                <h4><a href="">Tips and Guides</a></h4>
+                <p>Physical fitness may help prevent depression, anxiety</p>
+                <br>
+                <hr>
+                <p>Fitness: The best exercise to lose belly fat and tone up...</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
